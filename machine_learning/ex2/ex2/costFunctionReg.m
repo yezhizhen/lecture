@@ -22,7 +22,7 @@ J = 1/m *(-y'*log(temp)-(1-y)'*log(1-temp)) + lambda/(2*m) * sum( (theta(2:n,:))
 
 grad(1) = 1/m * (temp - y)'*X(:,1);
 
-grad(2:n) = 1/m* (((temp - y)'*X)')(2:n,:) + lambda/m *theta(2:n,:);
+grad(2:n) = 1/m* ((temp - y)'*X(:,2:n))' + lambda/m *theta(2:n,:);
 
 
 
