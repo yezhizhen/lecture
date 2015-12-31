@@ -1,0 +1,8 @@
+1. 
+Train dataset using 50 loops.
+
+If using loop structure,
+it takes 2mins 29seconds
+
+If using matrix,
+it takes 8.7seconds.
